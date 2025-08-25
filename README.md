@@ -88,28 +88,6 @@ to:
 background-attachment: scroll, scroll;
 ```
 
----
-
-## How to Run
-
-- Just open `index.html` in any modern browser.
-- *(Optional)* Serve locally:
-  - **Python 3:** `python -m http.server 8000` → visit `http://localhost:8000`
-
----
-
-## Accessibility & Validation Checklist
-
-- [x] One `<html lang="en">` (no duplicates)
-- [x] `<head>` has **exactly one** `<title>`
-- [x] Properly nested/closed elements (`section`, `article`, `aside`, `figure`, `footer`)
-- [x] Only one top-level `<h1>`
-- [x] Descriptive `alt` on images
-- [x] External links opened in a new tab include `rel="noopener noreferrer"`
-- [x] Provides a reduced-motion fallback for animated background
-
----
-
 ## Notes
 
 - The content is intentionally simple and self-contained for the lab.

@@ -91,7 +91,6 @@ background-attachment: scroll, scroll;
 ## Notes
 
 - The content is intentionally simple and self-contained for the lab.
-- Optional copy edits you can apply later: change `Im` → `I’m`, `Imm` → `I’m`, and “Hands on” → “Hands-on”.
 
 ---
 

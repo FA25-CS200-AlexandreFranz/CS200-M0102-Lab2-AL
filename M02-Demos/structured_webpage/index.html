@@ -11,7 +11,7 @@ Author:            Alexandre Franz Pries Junior
   <title>ME</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
-  /* Fundo com GIF + overlay para legibilidade */
+  /* GIF background + overlay for readability */
   body{
     margin:0;
     min-height:100vh;
@@ -26,7 +26,7 @@ Author:            Alexandre Franz Pries Junior
     font-family: system-ui, Arial, sans-serif;
   }
 
-  /* Caixas translúcidas para o conteúdo */
+  /* Translucent boxes for content */
   main{ max-width:900px; margin:0 auto; padding:1rem; }
   section, article, aside, figure, footer{
     background: rgba(0,0,0,.30);
@@ -36,7 +36,7 @@ Author:            Alexandre Franz Pries Junior
     margin: 1rem 0;
   }
 
-  /* Acessibilidade: reduz movimento se o usuário preferir */
+  /* Accessibility: Reduces movement if the user prefers */
   @media (prefers-reduced-motion: reduce){
     body{
       background-image: linear-gradient(#111, #111);
@@ -56,14 +56,18 @@ Author:            Alexandre Franz Pries Junior
       </p>
       <p>I'll talk about myself a little.</p>
     </section>
-
+    <!--ABOUT ME PART
+         Small personal abstract
+         Has an ID used so navigation links can be addressed to this section-->
     <section id="about-me">
       <h2>About me</h2>
       <p>
         My world runs on three fuels: cars, anime, and gaming. Im obsessed with performance, learning how things go faster, dreaming up builds, and swapping garage stories. On the chill side, I binge anime (classics to new releases) and hop into games to unwind and compete. Imm also into music, photos, and new tech to try on my projects.
       </p>
     </section>
-
+<!--INTERESTS SECTION
+         Ranks Tiers of interest in cars, anime, gaming, creative, travel
+         Has an aside for related Skills content-->
     <section>
       <h2>My Interests</h2>
       <ul>
@@ -73,7 +77,9 @@ Author:            Alexandre Franz Pries Junior
         <li>Creative: photography, simple graphic design, music</li>
         <li>Travel: exploring new countries, Japan mainly, then wherever the road leads</li>
       </ul>
-
+<!--ASIDE: SKILLS
+           Supporting information related to Interests
+           aria-labelledby enhances accessibility mapping of heading on to region-->
       <aside aria-labelledby="skills-title">
         <h3 id="skills-title"><strong>Skills</strong></h3>
         <ul>
@@ -84,7 +90,9 @@ Author:            Alexandre Franz Pries Junior
         </ul>
       </aside>
     </section>
-
+<!--ARTICLE: FUN FACT
+         Self-standing narrative-based material necessarily on the author
+         Correct use of <article> in designating some unit of independent material-->
     <article>
       <h2>Fun Fact About Me</h2>
       <p>
@@ -92,18 +100,24 @@ Author:            Alexandre Franz Pries Junior
         My fun fact: I once drifted a Chevette on a dirt track when I was 16, most exhilarating moment of my life! I learned manual on a Marea Turbo with my dad and I’ve been obsessed with tuning ever since.
       </p>
     </article>
-
+ <!--FAVOURITE QUOTE
+         Secondary material on the author
+         Displays use of <aside> semantically in a blockquote-->
     <aside aria-labelledby="favorite-quote">
       <h2 id="favorite-quote">Favorite Quote</h2>
       <blockquote>“If you don't sacrifice for what you want, what you want becomes the sacrifice.”</blockquote>
     </aside>
-
+ <!--FIGURE: MEDIA + CAPTION
+         Fulfill sets Add Media constraint with an <img> and informative alt
+         The significance of the image is clarified by the letters found under it-->
     <figure>
       <img src="https://64.media.tumblr.com/06be769db8a1ea2f69af2bbb4f7233b6/9d4440e1ff403012-03/s640x960/1a22adcf09752afc9d33dbddb584b74534915079.gifv" alt="Animated scene symbolizing speed and passion for cars and racing.">
       <figcaption><strong>My passion</strong></figcaption>
     </figure>
   </main>
-
+<!--FOOTER
+       Bare contact details with a mailto link
+       Keeps the same theme on the page as transparent background-->
   <footer style="text-align: center; padding: 5px; color: white; margin: 0; width: 100%; background: transparent; font-size: 12px;">
     <p>Contact me at: <a href="mailto:alexandre@example.com" style="color: #ffcc00;">alexandre@example.com</a></p>
   </footer>
